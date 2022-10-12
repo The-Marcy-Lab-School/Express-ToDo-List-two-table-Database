@@ -16,11 +16,11 @@ Build a full CRUD, RESTful API using Express and Postgres for a Todo List with t
 |-----------|---------------------|------------------------------------------------------|
 | GET       | /users              | A route to see all users                             |
 | POST      | /users              | Create a user                                        |
+| DELETE    | /users/:id          | Delete a user                                        |
 | GET       | /users/:id/todos    | A route to see all the todos that belong to the user that matches the given id  | 
 | GET       | /todos/:id          | A route to see details about an individual todo item |
 | POST      | /todos              | Create a todo                                        |
-| PUT/PATCH | /todos/:id          | Update a todo's description and completion           |
-| DELETE    | /todos/:id          | Delete a todo.                                       |
+| DELETE    | /todos/:id          | Delete a todo                                        |
 
 
 ## Setting Up Your App for Deployment
