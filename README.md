@@ -1,6 +1,8 @@
 # Schema Design and Building RESTful APIs: ToDo List
 
-Build a full CRUD, RESTful API using Express and Postgres for a Todo List. 
+Build a full CRUD, RESTful API using Express and Postgres for a Todo List with two tables:
+* `Users` Table
+* `Todos` Table
 
 ## Lab Directions
 * Create all of your necessary app files in this directory. (I have included GitHub's standard Node.js `.gitignore` template so that you don't end up pushing `node_modules` to GitHub. 
@@ -12,12 +14,13 @@ Build a full CRUD, RESTful API using Express and Postgres for a Todo List.
 
 | HTTP Verb | PATH                | Description                                          |
 |-----------|---------------------|------------------------------------------------------|
-| GET       | /todos              | A route to see all todos                             |
+| GET       | /users              | A route to see all users                             |
+| POST      | /users              | Create a user                                        |
+| GET       | /users/:id/todos    | A route to see all the todos that belong to the user that matches the given id  | 
 | GET       | /todos/:id          | A route to see details about an individual todo item |
 | POST      | /todos              | Create a todo                                        |
-| PUT/PATCH | /todos/:id          | The ability to update the description of a todo      |
-| PUT/PATCH | /todos/:id/complete | The ability to mark a todo complete                  |
-| DELETE    | /todos/:id          | Delete a todo                                        |
+| PUT/PATCH | /todos/:id          | Update a todo's description and completion           |
+| DELETE    | /todos/:id          | Delete a todo.                                       |
 
 
 ## Setting Up Your App for Deployment
