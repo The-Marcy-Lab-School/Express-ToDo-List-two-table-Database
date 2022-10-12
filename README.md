@@ -7,7 +7,7 @@ Build a full CRUD, RESTful API using Express and Postgres for a Todo List with t
 ## Lab Directions
 * Create all of your necessary app files in this directory. (I have included GitHub's standard Node.js `.gitignore` template so that you don't end up pushing `node_modules` to GitHub. 
 * You should `npm install express pg knex`. Use express to build your API. Use knex to create your database migrations and seeds. Use pg to connect your express API to your database.
-* Your core app logic must be separated into the appropriate files, and your project files should be organized into folders according to their purpose: models, controllers, and/or routes.
+* Your core app logic must be separated into the appropriate files, and your project files should be organized into folders according to their purpose: **models, controllers, and/or routes**.
 
 ### API Endpoints
 **Each endpoint should respond with the appropriate JSON response. Our API should support:**
